@@ -1,3 +1,6 @@
 [[plugins]]
 repo = 'jnurmine/Zenburn'
 hook_add = 'colorscheme zenburn'
+
+[[plugins]]
+repo = 'airblade/vim-gitgutter'
