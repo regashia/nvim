@@ -61,4 +61,6 @@ map! <C-d> <Del>
 
 imap <expr> <C-k> "\<C-g>u".(col('.') == col('$') ? '<C-o>gJ' : '<C-o>D')
 cmap <C-k> <C-\>e getcmdpos() == 1 ? '' : getcmdline()[:getcmdpos()-2]<CR>
+
+set number
 " }}}
