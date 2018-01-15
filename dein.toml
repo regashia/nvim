@@ -1,0 +1,3 @@
+[[plugins]]
+repo = 'jnurmine/Zenburn'
+hook_add = 'colorscheme zenburn'
