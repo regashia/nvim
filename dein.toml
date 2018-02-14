@@ -1,6 +1,9 @@
 [[plugins]]
-repo = 'jnurmine/Zenburn'
-hook_add = 'colorscheme zenburn'
+repo = 'w0ng/vim-hybrid'
+hook_add = '''
+  set background=dark
+  colorscheme hybrid
+'''
 
 [[plugins]]
 repo = 'airblade/vim-gitgutter'
