@@ -6,6 +6,9 @@ hook_add = '''
 '''
 
 [[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
+[[plugins]]
 repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
