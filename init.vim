@@ -61,6 +61,12 @@ vmap <C-d> <Del>
 omap <C-d> <Del>
 map! <C-d> <Del>
 
+imap <M-f> <C-o>e<Right>
+cmap <M-f> <S-Right>
+
+imap <M-b> <C-Left>
+cmap <M-b> <S-Left>
+
 imap <expr> <C-k> "\<C-g>u".(col('.') == col('$') ? '<C-o>gJ' : '<C-o>D')
 cmap <C-k> <C-\>e getcmdpos() == 1 ? '' : getcmdline()[:getcmdpos()-2]<CR>
 
