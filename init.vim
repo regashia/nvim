@@ -24,11 +24,13 @@ endif
 " }}}
 
 " 設定 {{{
+" Python support
 let python3_path = system('which python3')
 if !v:shell_error
   let g:python3_host_prog = system('which python3 | tr -d "\n"')
 endif
 
+" Leader key
 let mapleader = "\<Space>"
 
 " :map   :noremap  :unmap     ノーマル、ビジュアル、選択、オペレータ待機
