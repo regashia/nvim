@@ -1,5 +1,9 @@
 " dein from: https://qiita.com/hanaclover/items/f45250b55e2298c4ac5a {{{
 " dein 自体の自動インストール
+if &compatible
+  set nocompatible
+endif
+
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -21,6 +25,9 @@ endif
 if has('vim_starting') && dein#check_install()
   call dein#install()
 endif
+
+filetype plugin indent on
+syntax enable
 " }}}
 
 " 設定 {{{
