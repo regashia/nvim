@@ -33,3 +33,15 @@ repo = 'tpope/vim-fugitive'
 
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
+
+[[plugins]]
+repo = 'junegunn/fzf'
+build = './install --bin'
+merged = '0'
+
+[[plugins]]
+repo = 'junegunn/fzf.vim'
+depends = 'fzf'
+hook_add = '''
+  nmap <C-p> :FZF<CR>
+'''
