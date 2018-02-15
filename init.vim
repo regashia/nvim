@@ -29,6 +29,8 @@ if !v:shell_error
   let g:python3_host_prog = system('which python3 | tr -d "\n"')
 endif
 
+let mapleader = "\<Space>"
+
 " :map   :noremap  :unmap     ノーマル、ビジュアル、選択、オペレータ待機
 " :nmap  :nnoremap :nunmap    ノーマル
 " :vmap  :vnoremap :vunmap    ビジュアル、選択
