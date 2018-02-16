@@ -4,6 +4,9 @@ if &compatible
   set nocompatible
 endif
 
+" Leader key
+let mapleader = "\<Space>"
+
 let s:cache_home = empty($XDG_CACHE_HOME) ? expand('~/.cache') : $XDG_CACHE_HOME
 let s:dein_dir = s:cache_home . '/dein'
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
@@ -36,9 +39,6 @@ let python3_path = system('which python3')
 if !v:shell_error
   let g:python3_host_prog = system('which python3 | tr -d "\n"')
 endif
-
-" Leader key
-let mapleader = "\<Space>"
 
 " :map   :noremap  :unmap     ノーマル、ビジュアル、選択、オペレータ待機
 " :nmap  :nnoremap :nunmap    ノーマル
