@@ -30,6 +30,11 @@ repo = 'airblade/vim-gitgutter'
 
 [[plugins]]
 repo = 'tpope/vim-fugitive'
+hook_add = '''
+  nmap <Leader>gs :Gstatus<CR>
+  nmap <Leader>gd :Gdiff<CR>
+  nmap <Leader>gb :Gblame<CR>
+'''
 
 [[plugins]]
 repo = 'easymotion/vim-easymotion'
